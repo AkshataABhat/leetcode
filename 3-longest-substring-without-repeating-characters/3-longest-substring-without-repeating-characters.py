@@ -10,6 +10,4 @@ class Solution:
                 left+=1
             charSet.add(s[right])
             res=max(res,right-left+1)
-            
         return res
-        
