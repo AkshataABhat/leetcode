@@ -7,5 +7,8 @@ class Solution:
                 return (lookup[nums[i]],i)
             else:
                 lookup[target-nums[i]]=i
+                
+        return None 
             
-        return None
+        
+        
