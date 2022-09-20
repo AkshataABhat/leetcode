@@ -7,7 +7,8 @@ class Solution:
             if curSum<0:
                 curSum=0
             curSum+=n
-            maxSub=max(maxSub,curSum)
-        
+            maxSub=max(curSum,maxSub)
         return maxSub
+        
+        
         
