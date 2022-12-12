@@ -4,9 +4,7 @@ class Solution:
 	def binarysearch(self, arr, n, k):
 		# code here
 		low,high=0,len(arr)-1
-		mid=low+(high-low)//2
-		
-		while low <= high:
+        while low <= high:
 
             mid = low + (high - low)//2
 
@@ -21,6 +19,7 @@ class Solution:
 
         return -1
 
+		        
 
 #{ 
  # Driver Code Starts
