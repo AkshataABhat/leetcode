@@ -2,6 +2,9 @@ class Solution:
     def findSum(self,A,N): 
         #code here
         maxv,minv=float('-inf'),float('inf')
+        if n==1:
+            maxv=A[0]
+            minv=A[0]
         for i in range(len(A)):
             if A[i]>maxv:
                 maxv=A[i]
