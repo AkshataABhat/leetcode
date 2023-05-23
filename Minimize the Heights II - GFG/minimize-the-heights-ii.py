@@ -5,18 +5,18 @@ class Solution:
         # code here
         arr.sort()
         ans=arr[n-1]-arr[0]
-        smallest=arr[0]+k
-        biggest=arr[n-1]-k
+        tempmax=arr[n-1]
+        tempmin=arr[0]
         
         for i in range(1,n):
-            if arr[i] < k:
+            if arr[i]<k:
                 continue
-            small=min(smallest,arr[i]-k)
-            big=max(biggest,arr[i-1]+k)
-            ans=min(ans,big-small)
+            tempmin=min(arr[0]+k,arr[i]-k)
+            tempmax=max(arr[i-1]+k,arr[n-1]-k)
             
+            ans=min(ans,tempmax-tempmin)
         return ans
-            
+
 
 #{ 
  # Driver Code Starts
