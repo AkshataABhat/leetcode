@@ -5,16 +5,15 @@ class Solution:
     #Function to find the sum of contiguous subarray with maximum sum.
     def maxSubArraySum(self,arr,N):
         ##Your code here
-        max_sub=arr[0]
-        cursum=0
-        for i in range(len(arr)):
-            
-            if cursum<0:
-                cursum=0
-            cursum+=arr[i]
-            max_sub=max(cursum,max_sub)
-            
-        return max_sub
+        maxSub=arr[0]
+        curSum=0
+        
+        for n in arr:
+            if curSum<0:
+                curSum=0
+            curSum+=n
+            maxSub=max(maxSub,curSum)
+        return maxSub
 
 
 #{ 
