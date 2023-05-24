@@ -11,8 +11,8 @@ class Solution:
         for i in range(1,n):
             if arr[i]<k:
                 continue
-            tempmin=min(arr[0]+k,arr[i]-k)
-            tempmax=max(arr[i-1]+k,arr[n-1]-k)
+            tempmin=min(arr[0] + k,arr[i]-k)
+            tempmax=max(arr[i-1]+k, arr[n - 1] - k)
             
             ans=min(ans,tempmax-tempmin)
         return ans
