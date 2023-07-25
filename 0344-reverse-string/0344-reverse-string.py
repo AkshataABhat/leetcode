@@ -3,9 +3,10 @@ class Solution:
         """
         Do not return anything, modify s in-place instead.
         """
-        n=len(s)
-        start,end=0,n-1
-        while start<=end:
-            s[start],s[end]=s[end],s[start]
-            start+=1
-            end-=1
+        l,r=0,len(s)-1
+        while l<r:
+            s[l],s[r]=s[r],s[l]
+            l+=1
+            r-=1
+        return s
+        
