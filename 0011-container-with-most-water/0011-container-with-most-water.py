@@ -9,5 +9,4 @@ class Solution:
             else:
                 r-=1
         return area
-            
         
